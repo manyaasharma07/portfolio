@@ -134,6 +134,15 @@
         }
 
         @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .profile-container {
+                margin-left: 0;
+            }
             .container {
                 padding: 1rem;
             }
@@ -153,8 +162,15 @@
 </head>
 <body>
     <header>
-        <h1>Manya Sharma</h1>
-        <p>Undergrad Student | B Tech in AI&ML | Web Development</p>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Manya Sharma</h1>
+                <p>Undergrad Student | B Tech in AI&ML | Web Development</p>
+            </div>
+            <div class="profile-container">
+                <img src="path-to-your-photo.jpg" alt="Your Name" class="profile-photo">
+            </div>
+        </div>
     </header>
 
     <nav>
