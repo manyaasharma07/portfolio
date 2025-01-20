@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaamKar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            color: white;
+        }
+
+        .back-button {
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-header {
+            margin-bottom: 2rem;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .project-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .project-description {
+            font-size: 1.1rem;
+        }
+
+        .project-sidebar {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .tech-stack {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .tech-stack li {
+            background: #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        .project-links {
+            margin-top: 2rem;
+        }
+
+        .project-links a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .project-links a:hover {
+            background: #34495e;
+        }
+
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="back-button">← Back to Portfolio</a>
+    </nav>
+
+    <div class="container">
+        <div class="project-header">
+            <h1 class="project-title">KaamKar</h1>
+            <div class="project-meta">
+            </div>
+        </div>
+
+        <img src="proj1.jpg" alt=" " class="project-image">
+
+        <div class="project-content">
+            <div class="project-description">
+                <h2>About the Project</h2>
+                <p>Kaamkar – AI-Powered Freelancing Platform
+Problem Statement
+Freelancers in India often struggle with issues such as high platform fees, unfair job distribution, lack of trust between clients and freelancers, and limited access to data-driven insights for career growth. Existing platforms prioritize international markets, making it difficult for Indian freelancers to find relevant opportunities and receive fair compensation.
+
+Approach & Solution
+
+AI-Powered Job Matching: Using machine learning algorithms to recommend projects based on a freelancer’s skills, experience, and past work history.
+Data-Driven Insights: Integration of Power BI to provide freelancers with performance analytics, helping them optimize their profiles and bids.
+Smart Verification & Trust System: AI-driven verification using Gemini ensures secure transactions and reduces fraud.
+Seamless Collaboration & Payments: Implementing automated contract management and escrow payments to ensure fair and timely compensation.
+Performance Evaluation: Using Mocha/Chai for rigorous testing, ensuring platform stability and efficiency.
+</p>
+                
+                <h2>Challenges</h2>
+                <p>Challenges Faced & How We Overcame Them
+1️⃣ Data Collection & Processing
+Challenge: Aggregating and structuring relevant job market data to train AI models for accurate recommendations.
+Solution: We sourced data from multiple freelancing platforms, analyzed job postings, and used machine learning to identify trends. Power BI was integrated to provide real-time insights for freelancers.
+2️⃣ Trust & Security Issues
+Challenge: Freelancers and clients were concerned about scams and non-payments.
+Solution: We implemented AI-driven KYC verification using Gemini and an escrow-based payment system to ensure secure and fair transactions.
+3️⃣ Freelancer Adoption & Engagement
+Challenge: Encouraging freelancers to transition from existing platforms to Kaamkar.
+Solution: We introduced lower platform fees, AI-powered job recommendations, and personalized growth analytics to make Kaamkar more attractive and beneficial.
+4️⃣ Scalability & Performance
+Challenge: Handling large volumes of users and transactions efficiently.
+Solution: Optimized backend architecture using scalable cloud solutions and conducted extensive testing with Mocha/Chai to ensure performance under high loads.
+5️⃣ Regulatory & Payment Challenges
+Challenge: Navigating Indian compliance regulations and integrating smooth payment options.
+Solution: We integrated UPI, bank transfers, and digital wallets while ensuring compliance with Indian financial regulations.
+</p>
+                
+                <h2>Key Features</h2>
+                <p>Key Features
+🔹 AI-Powered Job Matching – Uses machine learning algorithms to recommend the most relevant projects based on skills, experience, and preferences.
+🔹 Smart Bidding System – AI-driven price recommendations help freelancers bid competitively while maximizing earnings.
+🔹 Secure Payment System – Escrow-based transactions ensure safe and timely payments, preventing fraud and disputes.
+🔹 AI-Powered Profile Optimization – Automated analysis provides suggestions for improving freelancer profiles to increase visibility and job success.
+🔹 Data-Driven Insights – Power BI dashboards provide analytics on job trends, earnings, and performance to help freelancers make informed decisions.
+🔹 Trust & Verification System – AI-driven KYC and fraud detection using Gemini ensure only verified users can interact on the platform.
+🔹 Performance-Based Ranking – Freelancers are ranked based on skills, job success, and client ratings, ensuring fair job distribution.
+🔹 Seamless Communication – Integrated chat and collaboration tools enable efficient client-freelancer interaction.
+🔹 Automated Contracts & Invoicing – Smart contract generation simplifies agreements and invoicing for freelancers.
+🔹 Multi-Language & Regional Support – Designed specifically for Indian freelancers, supporting multiple regional languages and UPI-based payments.</p>
+                
+                <h2>Outcome</h2>
+                <p>Results & Impact
+Increased Job Relevance: Freelancers receive project recommendations tailored to their expertise, improving job acquisition rates.
+Enhanced Trust & Security: AI-based verification reduces scams and ensures fair practices for both clients and freelancers.
+Data-Driven Decision Making: Power BI insights help freelancers identify trends and optimize their pricing and strategies.
+Efficient Workflow: Automated processes save time and improve the overall user experience for freelancers and clients alike.
+Kaamkar aims to empower Indian freelancers by creating a fair, transparent, and AI-driven ecosystem that enhances their growth and success in the gig economy.</p>
+            </div>
+
+            <div class="project-sidebar">
+                <h3>Technologies Used</h3>
+                <ul class="tech-stack">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Node.js</li>
+                    <li>React</li>
+                </ul>
+
+                <div class="project-links">
+                    <a href="#" target="_blank">View Live</a>
+                    <a href="#" target="_blank">View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
