@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
+    <!-- Added Montserrat font with different weights -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -20,15 +21,17 @@
         h1, h2, h3 {
             font-weight: 600;
         }
+
         nav a {
             font-weight: 500;
         }
+
         header {
             background: #2c3e50;
             color: rgb(105, 230, 190);
-            text-align: center;
             padding: 2rem;
         }
+
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -42,6 +45,20 @@
             flex: 1;
         }
 
+        .profile-container {
+            flex-shrink: 0;
+            margin-left: 2rem;
+        }
+
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
         nav {
             background: #34495e;
@@ -106,14 +123,14 @@
         }
 
         .skills li {
-            background: #83edd2;
+            background: #37c5a1;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-weight: 500;
         }
 
         .contact {
-            background: #28b18f;
+            background: #37c5a1;
             padding: 2rem;
             border-radius: 8px;
             margin: 2rem 0;
@@ -129,6 +146,16 @@
         }
 
         @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .profile-container {
+                margin-left: 0;
+            }
+
             .container {
                 padding: 1rem;
             }
@@ -148,8 +175,15 @@
 </head>
 <body>
     <header>
-        <h1>Manya Sharma</h1>
-        <p>Undergrad Student | B Tech in AI&ML | Web Development</p>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Manya Sharma</h1>
+                <p>Web Developer | B Tech in AI&ML | Technology</p>
+            </div>
+            <div class="profile-container">
+                <img src="photo.jpg" alt=" " class="profile-photo">
+            </div>
+        </div>
     </header>
 
     <nav>
@@ -162,14 +196,14 @@
     <div class="container">
         <section id="about" class="about">
             <h2>About Me</h2>
-            <p>Hello! Being passionate about technology, development, and management, I enjoy building innovative solutions that make a real-world impact. From developing AI-powered platforms to working on data-driven projects, I thrive on problem-solving and collaboration..</p>
+            <p>Hello! I am Manya, a B Tech student, passionate about technology, development, and management. I thrive on solving complex problems and building innovative solutions. I enjoy exploring AI, data analysis, and software development to create meaningful impact. Always eager to learn and collaborate, I look forward to applying my skills in dynamic and challenging environments.</p>
         </section>
 
         <section id="projects" class="projects">
             <div class="project-card">
-                <img src="/api/placeholder/400/300" alt="Project 1">
+                <img src="project1.jpg" alt="KaamKar">
                 <h3>Project 1</h3>
-                <p>Description of your first project. Explain what you did and the technologies you used.</p>
+                <p>Kaamkar is an AI-powered freelancing platform designed to help Indian freelancers overcome the challenges of existing platforms. It leverages AI-driven recommendations, analytics, and automation to enhance job matching, streamline payments, and improve user experience. Built using Mocha/Chai, Power BI, and Gemini, Kaamkar aims to create a more efficient and freelancer-friendly ecosystem.</p>
             </div>
             <div class="project-card">
                 <img src="/api/placeholder/400/300" alt="Project 2">
@@ -186,19 +220,22 @@
         <section id="skills" class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python,C,C++ programming</li>
-                <li>Research and Data Analysis</li>
-                <li>Power BI</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>UI/UX Design</li>
+                <li>Responsive Design</li>
+                <li>Git</li>
             </ul>
         </section>
 
         <section id="contact" class="contact">
             <h2>Contact Me</h2>
-            <p>Email: manyasharma0710@gmail.com</p>
-            <p>LinkedIn: https://www.linkedin.com/in/manya-sharma-74bab4319</p>
-            <p>GitHub: https://github.com/manyaasharma07</p>
+            <p>Email: your.email@example.com</p>
+            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+            <p>GitHub: github.com/yourusername</p>
         </section>
     </div>
 
